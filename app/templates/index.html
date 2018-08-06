@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>{{title}} - Bellbird</title>
+	</head>
+	<body>
+		<h1>Alarms</h1>
+		<ul>
+			{% for alarm in alarms %}
+			<li>{{ alarm['id'] }} -- {{ alarm['text'] }}</li>
+			{% endfor %}
+		</ul>
+	</body>
+</html>
